@@ -13,6 +13,6 @@ public class Main {
         //with xml:
         ApplicationContext context = new ClassPathXmlApplicationContext("configFile.xml");
         Car car2 = context.getBean(Car.class);
-        System.out.println(car2.toString());
+        System.out.println(car2.toString() + " " + car2.getProduceСountries().getClass()); //Why this is arraylist?? not LinkeList for example?
     }
 }

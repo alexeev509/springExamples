@@ -4,21 +4,36 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
 
 import javax.annotation.PostConstruct;
+import java.util.List;
 
 @Configuration
 public class Car {
     @Value("Volkswagen")
     private String marka;
+    //Страны производители
+    private List<String> produceСountries;
 
+    public void setProduceСountries(List<String> produceСountries) {
+        this.produceСountries = produceСountries;
+    }
 
     public void setMarka(String marka) {
         this.marka = marka;
+    }
+
+    public String getMarka() {
+        return marka;
+    }
+
+    public List<String> getProduceСountries() {
+        return produceСountries;
     }
 
     @Override
     public String toString() {
         return "Car{" +
                 "marka='" + marka + '\'' +
+                ", produceСountries=" + produceСountries +
                 '}';
     }
 

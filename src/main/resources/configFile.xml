@@ -5,6 +5,12 @@
 
     <bean class="beans.Car" name="car" init-method="startMethodForXml">
         <property name="marka" value="BMW"/>
+        <property name="produceСountries">
+            <list>
+                <value>"Germany"</value>
+                <value>"French"</value>
+            </list>
+        </property>
     </bean>
 
 </beans>
