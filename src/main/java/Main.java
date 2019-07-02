@@ -5,7 +5,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class Main {
     public static void main(String[] args) {
-        //With annotations
+        //With annotations:
         ApplicationContext ctx = new AnnotationConfigApplicationContext("beans");
         Car car1 = ctx.getBean(Car.class);
         System.out.println(car1.toString());
