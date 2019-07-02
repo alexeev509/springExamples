@@ -7,10 +7,12 @@ import javax.annotation.PostConstruct;
 import java.util.List;
 
 @Configuration
+//@PropertySource(value="classpath:application.properties")
 public class Car {
     @Value("Volkswagen")
     private String marka;
     //Страны производители
+    @Value("#{'Germany,Austria'.split(',')}")
     private List<String> produceСountries;
 
     public void setProduceСountries(List<String> produceСountries) {

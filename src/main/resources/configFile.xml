@@ -8,7 +8,7 @@
         <property name="produceСountries">
             <list>
                 <value>"Germany"</value>
-                <value>"French"</value>
+                <value>"Chehia"</value>
             </list>
         </property>
     </bean>
