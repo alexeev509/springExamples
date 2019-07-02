@@ -19,6 +19,13 @@
                 <artifactId>spring-context</artifactId>
                 <version>${org.springframework.version}</version>
             </dependency>
+        <!--For logging-->
+        <!-- https://mvnrepository.com/artifact/org.springframework/spring-jcl -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-jcl</artifactId>
+            <version>${org.springframework.version}</version>
+        </dependency>
     </dependencies>
 
 </project>
