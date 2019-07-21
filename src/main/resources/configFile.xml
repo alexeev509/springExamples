@@ -5,12 +5,20 @@
 
     <bean class="beans.Car" name="car" init-method="startMethodForXml">
         <property name="marka" value="BMW"/>
-        <property name="produceСountries">
+        <property name="produceСountries" ref="list">
+            <!--<list>-->
+            <!--<value>"Germany"</value>-->
+            <!--<value>"Chehia"</value>-->
+            <!--</list>-->
+        </property>
+    </bean>
+    <bean name="list" class="java.util.LinkedList">
+        <constructor-arg>
             <list>
                 <value>"Germany"</value>
                 <value>"Chehia"</value>
             </list>
-        </property>
+        </constructor-arg>
     </bean>
 
 </beans>
