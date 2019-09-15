@@ -25,7 +25,11 @@
     <bean class="beans.BeanWithConstructorAndProperty">
         <property name="r" value="4"/>
         <constructor-arg name="r" value="6"/>
-        <constructor-arg name="map">
+        <constructor-arg ref="map"/>
+    </bean>
+
+    <bean id="map" class="java.util.HashMap">
+        <constructor-arg>
             <map>
                 <entry key="Vasya" value="1"/>
                 <entry key="Polina" value="2"/>
