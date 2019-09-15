@@ -21,4 +21,16 @@
         </constructor-arg>
     </bean>
 
+
+    <bean class="beans.BeanWithConstructorAndProperty">
+        <property name="r" value="4"/>
+        <constructor-arg name="r" value="6"/>
+        <constructor-arg name="map">
+            <map>
+                <entry key="Vasya" value="1"/>
+                <entry key="Polina" value="2"/>
+            </map>
+        </constructor-arg>
+    </bean>
+
 </beans>
